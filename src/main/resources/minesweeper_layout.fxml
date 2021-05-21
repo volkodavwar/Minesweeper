@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.volkov.controller.Controller">
+
+    <HBox alignment="BASELINE_CENTER" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="10" spacing="50">
+        <Label fx:id="flagsRemain" alignment="BASELINE_LEFT" style="-fx-font-size: 20pt;"/>
+
+        <Button alignment="CENTER" onAction="#onRestartClick" text="Restart" AnchorPane.topAnchor="10" />
+
+    </HBox>
+
+
+    <Pane fx:id="field" AnchorPane.bottomAnchor="100" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" AnchorPane.topAnchor="100">
+    </Pane>
+
+
+</AnchorPane>

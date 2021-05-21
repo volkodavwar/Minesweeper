@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffa969;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.volkov.controller.MenuController">
+
+    <Label alignment="CENTER" contentDisplay="CENTER" text="Minesweeper"
+           style="-fx-text-fill: rgba(0,0,0,0.91); -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.7) , 5,5,0,0 );"
+           textAlignment="CENTER" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="20">
+        <font>
+            <Font name="Agency FB Bold" size="40.0"/>
+        </font>
+    </Label>
+
+    <Button fx:id="startButton" onAction="#onStartClick" stylesheets="start_button.css" styleClass="startButton"
+            text="Начать" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" AnchorPane.topAnchor="200">
+        <font>
+            <Font name="Segoe UI Light"/>
+        </font>
+    </Button>
+
+
+    <HBox AnchorPane.bottomAnchor="50" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" alignment="CENTER">
+
+        <VBox alignment="CENTER" style="-fx-padding: 50">
+
+            <Label text="Количество бомб" alignment="CENTER"
+                   style="-fx-font-size: 16pt; -fx-text-fill: rgba(0,0,0,0.91); -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.7) , 5,5,0,0 ); -fx-padding: 10">
+                <font>
+                    <Font name="Segoe UI Light"/>
+                </font>
+            </Label>
+
+            <Spinner
+                    fx:id="minesCountSpinner"
+                    min="1"
+                    max="50"
+                    initialValue="25"
+            />
+        </VBox>
+
+        <VBox alignment="CENTER" style="-fx-padding: 50">
+
+            <Label text="Размер поля" alignment="CENTER"
+                   style="-fx-font-size: 16pt; -fx-text-fill: rgba(0,0,0,0.91); -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.7) , 5,5,0,0 ); -fx-padding: 10">
+                <font>
+                    <Font name="Segoe UI Light"/>
+                </font>
+            </Label>
+
+            <HBox>
+                <Spinner
+                        fx:id="fieldWidthSpinner"
+                        min="1"
+                        max="50"
+                        initialValue="25"
+                        prefWidth="100"
+                />
+
+                <Label text="x" style="-fx-font-size: 16pt; -fx-text-fill: #FFFFFF" alignment="CENTER"/>
+
+                <Spinner
+                        fx:id="fieldHeightSpinner"
+                        min="1"
+                        max="50"
+                        initialValue="10"
+                        prefWidth="100"
+                />
+
+            </HBox>
+
+
+        </VBox>
+
+    </HBox>
+
+</AnchorPane>

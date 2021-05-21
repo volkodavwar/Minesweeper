@@ -1,0 +1,11 @@
+.startButton {
+    -fx-background-color: #ffa969;
+    -fx-border-color: #000000;
+    -fx-text-fill: #532203;
+    -fx-font-size: 16pt;
+}
+
+.startButton:pressed {
+    -fx-background-color: #fc8d36;
+    -fx-text-fill: #ffffff;
+}
